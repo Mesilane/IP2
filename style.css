@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'rethink';
+    src: url(./styles/RethinkSans-VariableFont_wght.ttf);
+}
+
+body{
+    margin: 0;
+    background-color: #1e0135;
+    color: #fff;
+    text-align: center;
+    font-family: 'rethink';
+    user-select: none;
+}
+
+.drag{
+    background-color: #11011f;
+    height: 30.5px;
+    display: block;
+    -webkit-app-region: drag;
+    margin-bottom: 20px;
+}
+
+h2{
+    margin: 0;
+}
+
