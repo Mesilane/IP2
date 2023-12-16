@@ -14,10 +14,15 @@ body{
 
 .drag{
     background-color: #11011f;
-    height: 30.5px;
+    height: 25.5px;
     display: block;
     -webkit-app-region: drag;
     margin-bottom: 20px;
+    color: #610094;
+    text-align: left;
+    padding-left :14px;
+    padding-top: 5px;
+
 }
 
 h2{
