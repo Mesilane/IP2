@@ -3,6 +3,8 @@
     src: url(./styles/RethinkSans-VariableFont_wght.ttf);
 }
 
+
+
 body{
     margin: 0;
     background-color: #1e0135;
@@ -29,3 +31,26 @@ h2{
     margin: 0;
 }
 
+.functions{
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.apps{
+    border-radius: 3px;
+    border: 5px double #11011f;
+    background-color: #610094;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+}
+
+
+
+
+
+
+div#1{
+    display: none;
+}
