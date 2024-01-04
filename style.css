@@ -24,7 +24,38 @@ body{
     text-align: left;
     padding-left :14px;
     padding-top: 5px;
+    position: relative;
+}
 
+
+.arrow{
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    padding-left: 8px;
+    padding-right: 8px;
+    max-height: 31px;
+    -webkit-app-region: no-drag;
+    display: none;
+}
+
+.arrow:focus{
+    background-color: #1e0733;
+}
+
+.arrow:hover{
+    background-color: #260b3f;
+}
+
+.arrow img{
+    width: 20px;
+    height: 31px;
+}
+
+.drag p{
+    margin: 0 0 0 -3px;
 }
 
 h2{
