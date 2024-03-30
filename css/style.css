@@ -8,6 +8,11 @@
 body{
     margin: 0;
     background-color: #040D12;
+    overflow: hidden;
+}
+
+body::-webkit-scrollbar{
+    display: none;
 }
 
 .loadScreen{
@@ -69,4 +74,29 @@ body{
     -webkit-app-region: drag;
     background-color: #040D12;
     height: 31px
+}
+
+
+.icons{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10vh 8vw;
+    text-align: center;
+    display: none;
+}
+
+.icon p{
+    margin: 0 auto;
+    font-family: 'K2D';
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+    color: #5C8374;
+}
+
+.icon{
+    width: 251px;
+    height: 251px;
+    margin-right: 2px;
+    margin-bottom: 90px
 }
