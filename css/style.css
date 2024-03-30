@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'K2D';
+    src: url(../styles/K2D-Regular.ttf
+    );
+}
+
+
+body{
+    margin: 0;
+    background-color: #040D12;
+}
+
+.loadScreen{
+    background: linear-gradient(to right,#000000 0%, transparent 100%), url(../icons/backLiad.png);
+    width: 100vw;
+    height: 90vh;
+    position: fixed;
+    text-align: left;
+    padding: 8vh 8vw;
+    user-select: none;
+}
+
+.loadScreen p:first-of-type{
+    font-size: 10vh;
+    font-weight: 800;
+    line-height: 125px;
+    color:#93B1A6 ;
+    margin: 0;
+    font-family: 'K2D';
+}
+
+.loadScreen p:first-of-type::before{
+    content: url(../icons/mainIcon.png);
+    display: inline-block;
+    width: auto;
+    height: 19vh;
+    margin-right: 5px;
+    background-size: cover;
+}
+
+.loadScreen p span{
+    font-size: 19vh;
+}
+
+.loadScreen p:nth-child(2){
+    color: #5C8374;
+    font-size: 3vh;
+    font-weight: 700;
+    line-height: 39px;
+    text-align: left;
+    margin: 0;
+    font-family: 'K2D';
+    margin-top: -26px;
+}
+
+.loadScreen p:last-of-type{
+    font-family: 'K2D';
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 65px;
+    position: absolute;
+    bottom: 8vh;
+    left: 30%;
+    color:  #FFFFFF5E;
+    ;
+}
+
+.dragZone{
+    -webkit-app-region: drag;
+    background-color: #040D12;
+    height: 31px
+}
