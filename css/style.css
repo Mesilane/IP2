@@ -92,11 +92,122 @@ body::-webkit-scrollbar{
     font-weight: 700;
     line-height: 52px;
     color: #5C8374;
+    margin-bottom: -48px;
+    user-select: none;
 }
 
 .icon{
     width: 251px;
     height: 251px;
     margin-right: 2px;
-    margin-bottom: 90px
+    margin-bottom: 90px;
+    display: flex;
+    align-items: end;
+    border-radius: 30px;
+    transition: all 0.2s ease-in-out;
+}
+
+.iconActive{
+    pointer-events: none;
+    background-color: #2f2428;
+}
+
+
+.icon:nth-child(1){
+    background-image: url(../icons/ic1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.icon:nth-child(1):hover{
+    background-image: url(../icons/ic1r.png);
+}
+
+.icon:nth-child(1):active{
+    background-image: url(../icons/ic1r.png);
+}
+
+.icon:nth-child(1):active p{
+    color: #2f2428; 
+}
+
+
+
+.icon:nth-child(2){
+    background-image: url(../icons/ic2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.icon:nth-child(2):hover{
+    background-image: url(../icons/ic2r.png);
+}
+
+.icon:nth-child(2):active{
+    background-image: url(../icons/ic2r.png);
+}
+
+.icon:nth-child(2):active p{
+    color: #2f2428; 
+}
+
+
+
+.icon:nth-child(3){
+    background-image: url(../icons/ic3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.icon:nth-child(3):hover{
+    background-image: url(../icons/ic3r.png);
+}
+
+.icon:nth-child(3):active{
+    background-image: url(../icons/ic3r.png);
+}
+
+.icon:nth-child(3):active p{
+    color: #2f2428; 
+}
+
+
+
+
+.icon:nth-child(4){
+    background-image: url(../icons/ic4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.icon:nth-child(4):hover{
+    background-image: url(../icons/ic4r.png);
+}
+
+.icon:nth-child(4):active{
+    background-image: url(../icons/ic4r.png);
+}
+
+.icon:nth-child(4):active p{
+    color: #2f2428; 
+}
+
+
+
+.icon:nth-child(5){
+    background-image: url(../icons/олег\ монгол.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.icon:nth-child(5):hover{
+    background-image: url(../icons/jktu\ 2.jfif);
+}
+
+.icon:nth-child(5):active{
+    background-image: url(../icons/jktu\ 2.jfif);
+}
+
+.icon:nth-child(5):active p{
+    color: #2f2428; 
 }

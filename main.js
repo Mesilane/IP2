@@ -1,8 +1,10 @@
 const {app, BrowserWindow, ipcMain} = require('electron')
 const path = require('path')
 
+let win = undefined
+
 const createWindow = () =>{
-    const win = new BrowserWindow({
+    win = new BrowserWindow({
         width: 800,
         minWidth: 1200,
         minHeight: 800,
@@ -30,13 +32,15 @@ const createWindow = () =>{
 app.whenReady().then(() => createWindow());
 app.on('window-all-closed', () => app.quit());
 
+let wind = []
+
 
 ipcMain.on('message', function(event, args){
     wind.unshift(new BrowserWindow({
         width: 400,
         height: 470,
         autoHideMenuBar: true,
-        parent: par
+        parent: win
     }))
-    wind[0].loadFile('')
+    wind[0].loadFile(`./html/${args}.html`)
 })
