@@ -13,7 +13,7 @@ const createWindow = () =>{
         frame: true,
         titleBarStyle: 'hidden',
         titleBarOverlay: {
-            color: '#040D12',
+            color: '#01080C',
             symbolColor: '#5C8374',
             height: 31
         },
@@ -37,10 +37,19 @@ let wind = []
 
 ipcMain.on('message', function(event, args){
     wind.unshift(new BrowserWindow({
-        width: 400,
-        height: 470,
+        width: 1000,
+        height: 800,
         autoHideMenuBar: true,
-        parent: win
+        parent: win,
+        titleBarStyle: 'hidden',
+        minWidth: 1000,
+        minHeight: 800,
+        titleBarOverlay: {
+            color: '#01080C',
+            symbolColor: '#5C8374',
+            height: 31,
+            
+        }
     }))
     wind[0].loadFile(`./html/${args}.html`)
 })

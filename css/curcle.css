@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'K2D';
+    src: url(../styles/K2D-Regular.ttf
+    );
+}
+
+
+body{
+    margin: 0;
+    background-color: #040D12;
+    overflow: hidden;
+    justify-content: center;
+    margin: 0;
+    color: #5C8374;
+    font-family: 'K2D';
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.dragZone{
+    -webkit-app-region: drag;
+    background-color: #01080C;
+    height: 31px
+}
+
+
+nav{
+    display: inline-flex;
+}
+
+nav p{
+    border: solid 3px #0c1f1f;
+    border-right: 0;
+    font-size: 30px;
+    padding: 0 20px;
+}
+
+.notes{
+    margin: auto;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+.mode{
+    margin: auto;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+.notes p{
+    border-bottom: 0;
+    margin: 0;
+    user-select: none;
+    cursor: pointer;
+}
+
+.notes p:last-of-type{
+    border: solid 3px #0c1f1f;
+    border-bottom: 0;
+}
+
+.mode p{
+    margin: 0;
+    padding: 0 12px;
+    user-select: none;
+    cursor: pointer;
+}
+
+
+.mode p:last-of-type{
+    border: solid 3px #0c1f1f;
+}
+
+
+.activeNote{
+    background-color: #0c1f1f;
+}
+
+.activeMode{
+    background-color: #0c1f1f;
+}

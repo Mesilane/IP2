@@ -9,7 +9,9 @@ const sendMessage = (what) => {
 
 
 for (let i of document.querySelectorAll('.icon')){
-    sendMessage(this.getAttribute('id'))
+    i.addEventListener('click', function(e){
+        sendMessage(this.getAttribute('id'))
+    })
 }
 
 
