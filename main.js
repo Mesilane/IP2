@@ -1,5 +1,7 @@
 const {app, BrowserWindow, ipcMain} = require('electron')
+const { arch } = require('os')
 const path = require('path')
+const slib = require('slib')
 
 let win = undefined
 
@@ -20,7 +22,6 @@ const createWindow = () =>{
         webPreferences: {
             nodeIntegration: true,
             contextIsolation:true,
-            nodeIntegration:true,
             preload: path.join(__dirname, './preload.js')
         },
     })
@@ -43,13 +44,28 @@ ipcMain.on('message', function(event, args){
         parent: win,
         titleBarStyle: 'hidden',
         minWidth: 1000,
-        minHeight: 800,
+        minHeight: 900,
         titleBarOverlay: {
             color: '#01080C',
             symbolColor: '#5C8374',
             height: 31,
-            
+        },
+        webPreferences: {
+            nodeIntegration: true,
+            contextIsolation:true,
+            preload: path.join(__dirname, `./js/${args}Preload.js`)
         }
     }))
     wind[0].loadFile(`./html/${args}.html`)
-})
+    if (args == 'notes'){
+        ipcMain.on('note', function(event, args){
+            wind[0].webContents.send('noteBack', slib.notesInScale(args[0], args[1]))
+    })}
+    if (args == 'chords'){
+        ipcMain.on('noteCH', function(event, args){
+            wind[0].webContents.send('noteBackCH', slib.chordsInScale(args[0], args[1]))
+    })}
+}
+)
+
+

@@ -28,8 +28,17 @@ body::-webkit-scrollbar{
 .header{
     font-size: 40px;
     text-align: center;
-    margin: 30px 0;
+    margin: 60px 0;
+    user-select: none;
 }
+
+.mid{
+    font-size: 40px;
+    text-align: center;
+    margin: 80px 0;
+    user-select: none;
+}
+
 
 nav{
     display: inline-flex;
@@ -87,4 +96,22 @@ nav p{
 
 .activeMode{
     background-color: #0c1f1f;
+}
+
+.info{
+    display: flex;
+    font-size: 40px;
+    justify-content: center;
+}
+
+.colom{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.colom p{
+    padding: 0 5px;
+    margin: 0;
+    width: 100px;
 }

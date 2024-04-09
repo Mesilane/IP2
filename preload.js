@@ -1,7 +1,7 @@
 const { contextBridge, ipcRenderer } = require('electron')
 
 const API = {
-    sendMsg: (msg) => ipcRenderer.send('message', msg)
+    sendMsg: (msg) => ipcRenderer.send('message', msg),
 }
 
 
