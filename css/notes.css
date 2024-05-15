@@ -114,4 +114,5 @@ nav p{
     padding: 0 5px;
     margin: 0;
     width: 100px;
+    user-select: none;
 }

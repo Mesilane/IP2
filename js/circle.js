@@ -1,5 +1,8 @@
-let note
-let mode
+
+let note = 'C'
+let mode = 'Ionian'
+let col = 0
+
 for (let i of document.querySelectorAll('.notes p')){
     i.addEventListener('click', function(e){
     if (this != document.querySelector('.active')){
@@ -11,6 +14,20 @@ for (let i of document.querySelectorAll('.notes p')){
         this.style.backgroundColor = ''
         this.classList.add('activeNote')
         note = this.innerHTML
+        window.api.sendNote([note, mode])
+        window.api.callNote((arg) =>{
+            col = 0
+            for (i of document.querySelectorAll('.pos')){
+                i.innerHTML = arg[0][col]
+                col++
+            }
+            col = 0
+            for (i of document.querySelectorAll('.note')){
+                i.innerHTML = arg[1][col]
+                col++
+            }
+            col = 0
+        })
     }else{
         e.preventDefault()
     }})
@@ -37,6 +54,20 @@ for (let i of document.querySelectorAll('.mode p')){
         this.style.backgroundColor = ''
         this.classList.add('activeMode')
         mode = this.innerHTML
+        window.api.sendNote([note, mode])
+        window.api.callNote((arg) =>{
+            col = 0
+            for (i of document.querySelectorAll('.pos')){
+                i.innerHTML = arg[0][col]
+                col++
+            }
+            col = 0
+            for (i of document.querySelectorAll('.note')){
+                i.innerHTML = arg[1][col]
+                col++
+            }
+            col = 0
+        })
     }else{
         e.preventDefault()
     }})

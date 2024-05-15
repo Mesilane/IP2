@@ -191,23 +191,3 @@ body::-webkit-scrollbar{
 .icon:nth-child(4):active p{
     color: #2f2428; 
 }
-
-
-
-.icon:nth-child(5){
-    background-image: url(../icons/олег\ монгол.jfif);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.icon:nth-child(5):hover{
-    background-image: url(../icons/jktu\ 2.jfif);
-}
-
-.icon:nth-child(5):active{
-    background-image: url(../icons/jktu\ 2.jfif);
-}
-
-.icon:nth-child(5):active p{
-    color: #2f2428; 
-}

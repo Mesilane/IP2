@@ -6,13 +6,17 @@
 
 
 body{
-    margin: 0;
+    margin: 10px;
     background-color: #040D12;
     overflow: hidden;
     justify-content: center;
     margin: 0;
     color: #5C8374;
     font-family: 'K2D';
+}
+
+p{
+    user-select: none;
 }
 
 body::-webkit-scrollbar{
@@ -23,4 +27,68 @@ body::-webkit-scrollbar{
     -webkit-app-region: drag;
     background-color: #01080C;
     height: 31px
+}
+
+
+.selects{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.selector_div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 0 0 20px;
+    justify-content: center;
+}
+
+.selector_div p{
+    font-size: 30px;
+    margin: 10px 0 5px 0;
+}
+
+.selector{
+    background-color: #01080C;
+    border: #08141b solid 3px;
+    width: 200px;
+    height: 50px;
+    color: #5C8374;
+    font-family: 'K2D';
+    font-size: 20px;
+    overflow: hidden;
+    outline: none;
+}
+
+.selector:hover{
+    background-color: #020c13;
+}
+
+
+
+.fing{
+    background-image: url(../icons/strings.png);
+    background-size: cover;
+    width: 752px;
+    height: 781px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.strings{
+    display: inline-flex;
+    margin-left: 187px;
+    margin-top: 30px;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+}
+
+.col div{
+    width: 60px;
+    height: 57px;
 }

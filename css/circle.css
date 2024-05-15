@@ -4,6 +4,9 @@
     );
 }
 
+p{
+    user-select: none;
+}
 
 body{
     margin: 0;
@@ -87,4 +90,121 @@ nav p{
 
 .activeMode{
     background-color: #0c1f1f;
+}
+
+
+.circle{
+    background-image: url(../icons/circir.png);
+    width: 600px;
+    height: 600px;
+    background-size: cover;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.circle p{
+    position: absolute;
+    font-size: 50px;
+    color: #040D12;
+    margin: 0;
+    user-select: none;
+}
+
+.circle p:first-of-type{
+    left: 56px;
+    top: 267px;
+}
+
+.circle p:nth-of-type(2){
+    left: 84px;
+    top: 155px;
+}
+
+.circle p:nth-of-type(3){
+    left: 168px;
+    top: 73px;
+}
+
+.circle p:nth-of-type(4){
+    left: 281px;
+    top: 41px;
+}
+
+.circle p:nth-of-type(5){
+    left: 390px;
+    top: 72px;
+}
+
+.circle p:nth-of-type(6){
+    left: 473px;
+    top: 154px;
+}
+
+.circle p:nth-of-type(7){
+    left: 498px;
+    top: 263px;
+}
+
+.circle p:nth-of-type(8){
+    left: 462px;
+    top: 376px;
+}
+
+.circle p:nth-of-type(9){
+    left: 380px;
+    top: 455px;
+}
+
+.circle p:nth-of-type(10){
+    left: 268px;
+    top: 483px;
+}
+
+.circle p:nth-of-type(11){
+    left: 161px;
+    top: 454px;
+}
+
+.circle p:nth-of-type(12){
+    left: 81px;
+    top: 373px;
+}
+
+.circle p:nth-of-type(13){
+    left: 148px;
+    top: 269px;
+}
+
+.circle p:nth-of-type(14){
+    left: 167px;
+    top: 201px;
+}
+
+
+.circle p:nth-of-type(15){
+    left: 215px;
+    top: 153px;
+}
+
+.circle p:nth-of-type(16){
+    left: 278px;
+    top: 131px;
+}
+
+.circle p:nth-of-type(17){
+    left: 346px;
+    top: 151px;
+}
+
+.circle p:nth-of-type(18){
+    left: 396px;
+    top: 198px;
+}
+
+.circle p:nth-of-type(19){
+    left: 404px;
+    top: 263px;
 }

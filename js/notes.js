@@ -16,7 +16,6 @@ for (let i of document.querySelectorAll('.notes p')){
         note = this.innerHTML
         window.api.sendNote([note, mode])
         window.api.callNote((arg) =>{
-            console.log(arg)
             col = 0
             for (i of document.querySelectorAll('.colom')){
                 i.querySelector('p').innerHTML = arg[0][col]
