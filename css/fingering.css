@@ -80,7 +80,7 @@ body::-webkit-scrollbar{
 .strings{
     display: inline-flex;
     margin-left: 187px;
-    margin-top: 30px;
+    margin-top: 30px;;
 }
 
 .col{
@@ -91,4 +91,6 @@ body::-webkit-scrollbar{
 .col div{
     width: 60px;
     height: 57px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
